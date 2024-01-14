@@ -110,7 +110,8 @@ gainedSubtract.addEventListener('click', () => {
 })
 
 destroyedAdd.addEventListener('click', () => {
-    if (destroyedCurrentCount <= current.energy + 1) {
+    if (destroyedCurrentCount + current.energy <= limit.maxEnergy
+        && current.energy > limit.minEnergy) {
         destroyedCurrentCount++
         destroyedCount.innerText = destroyedCurrentCount
         current.energy--

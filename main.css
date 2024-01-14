@@ -1,0 +1,16 @@
+html {
+    text-align: center;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    margin: 10px;
+}
+
+.actionSection {
+    margin-top: 20px;
+}
